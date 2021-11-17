@@ -291,13 +291,17 @@ body{
      font-family: 'Montserrat', sans-serif;
  }
  .work img {
-     width:30% ;
+     width:20% ;
      
  }
  .work{
      display: flex;
      justify-content: space-around;
  }  
+ .work .gg{
+  width:40% ;
+  height:130% ;
+ }
  
  .title{
      display: flex;
