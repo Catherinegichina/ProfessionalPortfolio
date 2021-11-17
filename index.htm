@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e74df817d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+    .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+    }
+    
+    .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+
+    <body>
+        <nav class="navbar">
+
+            <div class="brand-title">Portfolio<span></span><span>2021.</span></div>
+            <a href="#" class="menu-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a id= "top"href="#Index.html">HOME</a></li>
+                    <li><a id= "top"href="#About.html">ABOUT</a></li>
+                    <li><a id= "top"href="#Projects.html">PROJECTS</a></li>
+                    <li><a id= "top"href="#Contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <h2 class="tag">Gichina Catherine Kabura.</h2>
+            <h1 class="tagg anim-typewriter">UI/UX DESIGNER|DEVELOPER</h1>
+        </div>
+        <!-- About Section -->
+
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="/images/sunrise.mp4" class="fullscreen-bg__video">
+                <source src="/images/waves.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="About.html" class="about">
+            <h2 id="gkm">Get To Know Me</h2>
+            <p id="p1">
+                Catherine is an aspiring designer|developer passionate about creating user experiences that are seamless and
+                impactful.<br> Her understanding of human experience is essential for her to create useful and effective
+                products.
+               <br>She believes that user research is the most important step of the design process.
+                Taking time to understand a<br> problem from all angles,collecting and analyzing data using the right
+                methodologies,<br>
+                and finding evidence-based solutions.With an eye for graphics, typography, layout, and color she
+                loves<br> building functional
+                software and mobile products and infusing modern aesthetics Figma, Framer,and<br> Adobe Illustrator
+                to wireframe and prototype designs.</p>
+
+            <h3 class="skill">Skills</h3>
+            <div class="skills">
+                <div class="container" class="h" style="text-align: left; margin-left: 20%;">
+                    <div class="item">
+                        <label for="fig" style="font-size: 15px; ">Figma Tool</label><br><progress id="fig" value="100"
+                            max="100"></progress>
+                    </div>
+                    <div class="item ">
+                        <label for="AP" style="font-size: 15px; ">HTML5,CSS</label><br><progress id="AP"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="Framer" style="font-size: 15px; ">JavaScript</label><br><progress id="Framer"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="HT" style="font-size: 15px; ">Python</label><br><progress id="html" value="100"
+                            max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="AI" style=" font-size: 15px; ">UX Research</label><br><progress id="AI"
+                            value="100" max="100"></progress>
+                    </div>
+                    <div class="item">
+                        <label for="CSS" style=" font-size: 15px; ">UX Design</label><br><progress id="CSS" value="100"
+                            max="100"></progress><br>
+                        <button class="cta">RESUME</button>
+
+                    </div>
+                    
+                </div>
+            </div>
+                  
+
+             <!-- PROJECTS -->
+                
+            <div id="Projects.html" class="projects">
+                <h2 id="pro">PROJECTS</h2>
+                <div class="work">
+
+                    <img class="gg" src="images/Desktop - 1 (23).png">
+                    <img class="vogue" src="images/Feel the beat.png">
+                    <img class="zuri" src="images/Desktop - 1 (26).png">
+
+                </div>
+                <div class="title">
+
+                    <h3>Glam-gram</h3>
+                    <h3>DailyUI Challenges</h3>
+                    <h3>Zuri Galore</h3>
+                   
+                </div>
+            </div> 
+  
+             <div id="Contacts.html" class="contact">
+                <h2 class="git">CONTACT</h2>
+                <p>Let's get in touch:</p>
+                <div class="social-menu">
+    
+                    <ul id="icons">
+
+                      <li><a href="https://twitter.com/home?lang=en-gb"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-inbox"></i></a></li>
+                    </ul>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                  </div>
+                  <hr>
+                  <p>copy Gichina Catherine 2021.</p>
+                  <!-- <a href="#" class="cd-top text-replace js-cd-top">Top</a> -->
+                 
+            </div> 

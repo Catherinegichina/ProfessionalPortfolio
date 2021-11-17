@@ -1,0 +1,421 @@
+body{
+    background-color:rgb(23,23,23); 
+    /* background-image: url("images/Bckground\ image.jpeg"); */
+     color: white;
+     margin: 0;
+     padding: 0;
+ }
+ ::-webkit-scrollbar{
+     width: 8px;
+ }
+ ::-webkit-scrollbar-track{
+     background: whitesmoke;
+     border-radius: 5px;
+    
+ }
+ ::-webkit-slider-thumb{
+     background:crimson ;
+   
+ }
+ ::-webkit-scrollbar-thumb:hover{
+     background:crimson ;
+     border-radius: 10px;
+ 
+ }
+ html{
+     scroll-behavior: smooth;
+     font-family: 'Montserrat', sans-serif;
+ }
+   a{
+     padding:20px;
+     position: relative;
+     font-weight: normal;
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+     text-decoration: none;
+     color:whitesmoke;
+     transition: 0.5s; 
+  
+    
+  }
+  
+ #top::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 2px;
+     top: 100%;
+     left: 0;
+     background:crimson;
+     transition: transform 0.5s;
+     transform: scaleX(0);
+     transform-origin: right;
+ 
+   }
+ 
+   #top:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+     background-color: crimson;
+   }
+   a:hover{
+       color: crimson;
+   }
+   .navbar {
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     align-items: center;
+     color: whitesmoke; 
+     
+ }
+ .navbar .brand-title  {
+     font-size: 1rem;
+     margin: .5rem;
+     margin-top: 0.8%;
+     margin-left: 1.5%;
+ }
+ 
+ .navbar-links {
+     height: 100%;
+     margin-top: 0.8%;
+   
+ }
+ 
+ .navbar-links ul {
+     display: flex;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .navbar-links li {
+     list-style: none;
+ }
+ 
+ .navbar-links li a {
+     display: block;
+     text-decoration: none;
+     color: white;
+     padding: 1rem;
+    
+ }
+ .menu-button {
+     position: absolute;
+     top: .75rem;
+     right: 1rem;
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+ }
+ 
+ .menu-button .bar {
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+ }
+ 
+ @media (max-width: 800px) {
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+ 
+     .menu-button {
+         display: flex;
+     }
+ 
+     .navbar-links {
+         display: none;
+         width: 100%;
+     }
+ 
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+     }
+ 
+     .navbar-links ul li {
+         text-align: center;
+     }
+ 
+     .navbar-links ul li a {
+         padding: .5rem 1rem;
+     }
+ 
+     .navbar-links.active {
+         display: flex;
+     }
+ } 
+   .heading{   
+     padding-top: 10%;
+     height: 60vh;
+     background-repeat: no-repeat;
+     background-attachment: fixed;  
+     text-align: center; 
+ }
+ 
+ h2{
+     color: whitesmoke;
+     font-size: 2.5rem;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ /* h1{
+     color: crimson;
+     font-size: 3rem;
+     font-family: 'Montserrat', sans-serif;
+ } */
+ .tagg{
+     color: crimson;
+     font-size: 3rem;
+     font-family: 'Montserrat', sans-serif; 
+     position: relative;
+     top: 50%;
+     width: 21em;
+     margin: 0 auto;
+     text-align: center;
+     white-space: nowrap;
+     overflow: hidden;
+     transform: translateY(-50%);
+ }
+ .anim-typewriter {
+     animation: typewriter 4s steps(44) 1s 1 normal both,
+       blinkTextCursor 500ms steps(44) infinite normal;
+     top: 25px;
+   }
+   @keyframes typewriter {
+     from {
+       width: 0;
+     }
+     to {
+       width: 21em;
+     }
+   }
+   @keyframes blinkTextCursor {
+     from {
+       border-right-color:crimson;
+     }
+     to {
+       border-right-color:crimson;
+     }
+   }
+ 
+ span{
+     color: crimson;
+ }
+ .skill{
+     color:crimson ;
+     margin-bottom: auto;
+     padding-top: 30px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     text-align: center;
+     
+ }
+ /* About page */
+ .about{
+     height: 90vh;
+     background-color: whitesmoke;
+     margin-top: 300;
+ }
+ progress[value] {
+     width: 300px;
+     height: 10px;
+ }
+ 
+ progress[value] {
+     -webkit-appearance: none;
+     appearance: none;
+ }
+ 
+ progress[value]::-webkit-progress-value{
+     background-color: crimson;
+ }
+ 
+ progress::-webkit-progress-bar {
+     background-color: crimson;
+ }
+ .container {
+     display: grid;
+     grid-template-columns: auto auto;  
+ }
+ label{
+     color: black;
+ }
+ 
+ .item {
+     font-size: 30px;
+     text-align: left;
+ }
+ #p1{                                                                                                        
+ color:rgb(23,23,23); 
+ text-align: center;
+ font-family: 'Montserrat', sans-serif;
+ 
+ }
+ #gkm{
+     color:crimson ;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+ 
+ } 
+ .cta{
+     border: solid crimson 2px;
+     height: 39px;
+     width: 150px;
+     border-radius: 3px;
+ position: absolute ;
+  left: 46%;
+ }
+ .cta:hover{
+     background-color: crimson;
+     color: whitesmoke;   
+ }
+ /* Projects Page  */
+ 
+    
+ .projects{
+     height: 70vh; 
+     
+ }
+ 
+ #pro{
+     text-align: center;
+     color: crimson ;
+     margin-top: 7%;
+     justify-content: center;
+     font-family: 'Montserrat', sans-serif;
+ }
+ .work img {
+     width:30% ;
+     
+ }
+ .work{
+     display: flex;
+     justify-content: space-around;
+ }  
+ 
+ .title{
+     display: flex;
+     justify-content: space-around;
+     color: crimson;
+     
+ }   
+ 
+ 
+ 
+ 
+ /* contact page */
+  .contact{
+     height: 50vh; 
+     background-color: whitesmoke;
+     color:rgb(23,23,23) ;
+     text-align: center;
+  
+ }
+ .git{
+     text-align: center;
+     color: crimson ;
+     padding-top: 30px;
+     justify-content: center;
+     font-family: 'Montserrat', sans-serif;
+ }
+ hr{
+     height: 0.5px;
+     background:grey;
+   
+     }
+ 
+     .social-menu ul {
+         transform: translate(-50%, -50%);
+         padding: 0;
+         margin-bottom: 0;
+         display: flex;
+         margin-left: 58%;
+         margin-top:5%;
+     }
+     .social-menu ul li {
+         list-style: none;
+         margin: 0 10px;
+     }
+     .social-menu ul li .fa {
+         color: crimson;
+         font-size: 28px;
+          line-height: 25px; 
+         transition: .5s;
+         margin-bottom: 10%;
+     }
+     #icons{
+         text-decoration: none;
+      }
+     .social-menu ul li .fa:hover {
+         color: #ffffff;
+     }
+     .social-menu ul li a {
+       
+         display:inline-block;
+         border-radius: 50px;
+         text-align: center;
+         transition: 0.5s;
+         transform: translate(0,0px);
+          box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); 
+      } 
+     .social-menu ul li a:hover {
+         transform: rotate(0deg) skew(0deg) translate(0, -10px);
+     }
+     .social-menu ul li:nth-child(1) a:hover {
+         background-color: #55acee;
+     }
+     .social-menu ul li:nth-child(2) a:hover {
+         background-color: rgb(91, 91, 236);
+     }
+     .social-menu ul li:nth-child(3) a:hover {
+         background-color: #e729a8;
+     }
+     .social-menu ul li:nth-child(4) a:hover {
+         background-color: #55acee;
+     }
+     hr{
+         
+         color:grey;
+         margin-top: -1.5%;
+ 
+     }
+     /* .cd-top--is-visible { 
+         visibility: visible;
+         opacity: 1;
+       }
+       
+       .cd-top--fade-out { 
+         opacity: .5;
+     }
+     .cd-top{
+         margin-left: 95%;
+     } */
+     #myBtn {
+         display: none;
+         position: fixed;
+         bottom: 20px;
+         right: 30px;
+         z-index: 99;
+         font-size: 18px;
+         border: none;
+         outline: none;
+         background-color:crimson;
+         color: white;
+         cursor: pointer;
+         padding: 15px;
+         border-radius: 4px;
+       }
+       
+       #myBtn:hover {
+         background-color:black;
+         color: crimson;
+         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); 
+        
+       }
+
